@@ -8,6 +8,10 @@ var app= express();
 router.get('/', function(req, res, next) {
   res.render('site/index');
 });
+
+router.get('*', function (req, res, next) {
+  res.render('site/404');
+});
 // router.get('/contact', function(req, res, next) {
 //   res.render('site/contact');
 // });
