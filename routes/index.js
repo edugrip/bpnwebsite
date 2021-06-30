@@ -9,6 +9,10 @@ router.get('/', function(req, res, next) {
   res.render('site/index');
 });
 
+router.get('/coming', function (req, res, next) {
+  res.render('site/coming');
+});
+
 router.get('*', function (req, res, next) {
   res.render('site/404');
 });
